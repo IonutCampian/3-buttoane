@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <button id = nou class = joc>1</button>
+    <button id = nou2 class = joc>2</button>
+    <button id = nou3 class = joc>3</button>
+    </center>
+    <script>
+        function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+            }
+        var numar = getRandomInt(3);
+        var button = document.getElementById('nou');
+        button.addEventListener('click', e => {
+            if( numar == 0) {
+                alert('winner');
+            }
+            else{
+                alert('try again')
+            }
+        } )
+        var button1 = document.getElementById('nou2')
+        button1.addEventListener('click', e => {
+            if(numar == 1){
+                alert('winner')
+            }
+            else{
+                alert('try again!')
+            }
+        })
+        var button2 = document.getElementById('nou3')
+        button2.addEventListener('click', e => {
+            if(numar == 2){
+                alert('winner');
+            }
+            else{
+                alert('try again');
+            }
+        })
+    </script>
+</body>
+</html>
