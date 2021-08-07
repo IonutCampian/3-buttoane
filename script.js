@@ -1,8 +1,8 @@
 var addButtons = document.getElementById('addButtons');
 var btn = [0 , 1 , 2];
 function getRandomInt(max) {
-return Math.floor(Math.random() * max);
- }
+  return Math.floor(Math.random() * max);
+}
 var number = getRandomInt(3);
 for( var i = 0; i < 3; ++i){
     var newBtn = document.createElement('BUTTON');
