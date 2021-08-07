@@ -12,8 +12,7 @@ for( var i = 0; i < 3; ++i){
      newBtn.addEventListener('click',  function() {
      if(this.id == number){
             document.write("winner");
-     }
-     else{
+     } else{
             alert("try again!");
      }
     });
